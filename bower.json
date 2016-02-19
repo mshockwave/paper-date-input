@@ -9,18 +9,17 @@
   "keywords": [
     "web-components",
     "polymer",
-    "gold",
+    "paper",
     "input",
     "date"
   ],
   "main": "paper-date-input.html",
-  "private": true,
   "repository": {
     "type": "git",
-    "url": "git://github.com/mshockwave/gold-cc-expiration-input.git"
+    "url": "git://github.com/mshockwave/paper-date-input.git"
   },
   "license": "http://polymer.github.io/LICENSE.txt",
-  "homepage": "https://github.com/mshockwave/gold-cc-expiration-input",
+  "homepage": "https://github.com/mshockwave/paper-date-input",
   "ignore": [],
   "dependencies": {
     "iron-validator-behavior": "PolymerElements/iron-validator-behavior#^1.0.0",

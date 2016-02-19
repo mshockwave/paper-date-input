@@ -1,0 +1,56 @@
+<!--
+@license
+Copyright (c) 2015 The Polymer Project Authors. All rights reserved.
+This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
+The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
+The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
+Code distributed by Google as part of the polymer project is also
+subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
+-->
+
+<link rel="import" href="bower_components/polymer/polymer.html">
+<link rel="import" href="bower_components/iron-validator-behavior/iron-validator-behavior.html">
+
+<script>
+
+  Polymer({
+
+    is: 'date-validator',
+
+    behaviors: [
+      Polymer.IronValidatorBehavior
+    ],
+
+    validate: function(date) {
+      if (!date)
+        return false;
+
+      if (date.month > 12 || date.month < 1 || date.day < 1 || date.day > 31)
+        return false;
+
+      if(date.month == 2){
+        if(date.year % 4 == 0 || date.year % 400 == 0){
+          //29 days
+          if(date.day > 29) return false;
+        }else{
+          //28 days
+          if(date.day > 28 ) return false;
+        }
+      }else{
+        switch(date.month){
+          //30 days
+          case 4:
+          case 6:
+          case 9:
+          case 11:
+            if(date.day > 30) return false;
+            break;
+        }
+      }
+
+      return true;
+    }
+
+  });
+
+</script>

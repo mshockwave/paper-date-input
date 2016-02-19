@@ -1,0 +1,34 @@
+{
+  "name": "paper-date-input",
+  "version": "1.1.1",
+  "description": "A validating input for YYYY-MM-DD date",
+  "authors": [
+    "The Polymer Authors",
+    "Bekket McClane"
+  ],
+  "keywords": [
+    "web-components",
+    "polymer",
+    "gold",
+    "input",
+    "date"
+  ],
+  "main": "paper-date-input.html",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/mshockwave/gold-cc-expiration-input.git"
+  },
+  "license": "http://polymer.github.io/LICENSE.txt",
+  "homepage": "https://github.com/mshockwave/gold-cc-expiration-input",
+  "ignore": [],
+  "dependencies": {
+    "iron-validator-behavior": "PolymerElements/iron-validator-behavior#^1.0.0",
+    "iron-validatable-behavior": "PolymerElements/iron-validatable-behavior#^1.0.0",
+    "iron-flex-layout": "PolymerElements/iron-flex-layout#^1.0.0",
+    "iron-form-element-behavior": "PolymerElements/iron-form-element-behavior#^1.0.0",
+    "paper-input": "PolymerElements/paper-input#^1.0.0",
+    "paper-styles": "PolymerElements/paper-styles#^1.0.0",
+    "polymer": "Polymer/polymer#^1.1.0"
+  }
+}
